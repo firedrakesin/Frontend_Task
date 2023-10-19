@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import './Checkbox.css'
+import './Checkbox.css'; 
 
-const Chessbox = () => {
+const Checkbox = () => {
   const [highlightedCell, setHighlightedCell] = useState(null);
 
   const createChessboard = () => {
@@ -9,20 +9,14 @@ const Chessbox = () => {
     for (let row = 0; row < 8; row++) {
       for (let col = 0; col < 8; col++) {
         const isBlack = (row + col) % 2 === 0;
-        const cellStyle = {
-          backgroundColor: isBlack ? 'black' : 'white',
-          border: '1px solid gray',
-          width: '50px',
-          height: '50px',
-          cursor: 'pointer',
-        };
-        if (highlightedCell === `${row}-${col}`) {
-          cellStyle.backgroundColor = 'red';
-        }
+        const cellClasses = `cell ${isBlack ? 'black' : 'white'} ${
+          highlightedCell === `${row}-${col}` ? 'red' : ''
+        }`;
+
         board.push(
           <div
             key={`${row}-${col}`}
-            style={cellStyle}
+            className={cellClasses}
             onClick={() => setHighlightedCell(`${row}-${col}`)}
           ></div>
         );
@@ -32,10 +26,10 @@ const Chessbox = () => {
   };
 
   return (
-    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(8, 50px)' }}>
+    <div className='chess'>
       {createChessboard()}
     </div>
   );
 };
 
-export default Chessbox;
+export default Checkbox;

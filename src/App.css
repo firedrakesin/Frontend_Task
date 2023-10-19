@@ -1,18 +1,41 @@
+/* Styles for the body */
 body {
-    font-family: Arial, sans-serif; /* Font-family */
-    background-color: #f0f0f0; /* Background color for the entire body */
-    margin: 0; /*  Default margin */
-    padding: 0; /* Default padding */
-    color: #333; /* Default text color */
-  }
-  
-  /* Center content vertically and horizontally */
+  font-family: Arial, sans-serif;
+  background-color: #93f48f;
+  padding: 10px;
+  color: #0a0909;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+
+/* Additional styles for responsiveness */
+@media screen and (max-width: 768px) {
+  /* Adjust styles for screens with a maximum width of 768px (typical for phones) */
   body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    padding: 20px; /* Add some padding for better spacing */
   }
-  
+}
+
+/* Style for the heading */
+.heading {
+  font-size: 24px; /* Adjust the font size as needed */
+  font-weight: bold; /* Make the text bold if desired */
+  text-align: center; /* Center the text horizontally */
+  background-color: #f64d27; /* Background color for the heading */
+  color: #fff; /* Text color */
+  margin-bottom: 40px;
+  padding: 20px; /* Add padding for spacing */
+}
+
+.para{
+  font-size: 20px; /* the font size  */
+  text-align: center; /* Center the text horizontally */
+  color: #0b0101; /* Text color */
+  margin-bottom: 20px;
+  padding: 20px; /* Add padding for spacing */
+}
+
+
 
