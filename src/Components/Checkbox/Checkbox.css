@@ -1,25 +1,36 @@
 /* checkbox.css */
-.cell {
-    border: 1px solid gray;
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-  }
-  
-  .black {
-    background-color: black;
-  }
-  
-  .white {
-    background-color: white;
-  }
-  
-  .red {
-    background-color: red;
-  }
 
-  .chess{
-    display: grid;
-    grid-template-columns: repeat(8, 50px) ;
-  }
-  
+/* Defined styles for cells */
+.cell {
+  border: 1px solid gray;    /* Add a gray border */
+  width: 50px;              /* Set width to 50px */
+  height: 50px;             /* Set height to 50px */
+  cursor: pointer;          /* Change the cursor to a pointer on hover */
+}
+
+/* Define styles for black cells */
+.black {
+  background-color: black;  /* Set the background color to black for black cells */
+}
+
+/* Define styles for white cells */
+.white {
+  background-color: white;  /* Set the background color to white for white cells */
+}
+
+/* Define styles for red cells */
+.red {
+  background-color: red;    /* Set the background color to red for red cells */
+}
+
+/* Define styles for the chessboard grid */
+.chess {
+  display: grid;                            /* Use grid display */
+  grid-template-columns: repeat(8, 50px);    /* Create 8 columns, each 50px wide */
+}
+
+/* Define styles for the board container */
+.board {
+  display: flex;              /* Use flex display */
+  justify-content: center;   /* Center content horizontally */
+}

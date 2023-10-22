@@ -1,41 +1,39 @@
 /* Styles for the body */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #93f48f;
-  padding: 10px;
-  color: #0a0909;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 90vh;
+  font-family: Arial, sans-serif; /* Set the font-family for the entire body */
+  background-color: #93f48f; /* Set the background color to a light green shade */
+  padding: 10px; /* Add padding to the body for spacing */
+  color: #0a0909; /* Set the text color to a dark shade */
+  display: flex; /* Use a flexbox layout for alignment */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  min-height: 90vh; /* Ensure a minimum height of 90% of the viewport height */
 }
 
 /* Additional styles for responsiveness */
 @media screen and (max-width: 768px) {
   /* Adjust styles for screens with a maximum width of 768px (typical for phones) */
   body {
-    padding: 20px; /* Add some padding for better spacing */
+    padding: 20px; /* Increase padding for better spacing on smaller screens */
   }
 }
 
 /* Style for the heading */
 .heading {
-  font-size: 24px; /* Adjust the font size as needed */
-  font-weight: bold; /* Make the text bold if desired */
-  text-align: center; /* Center the text horizontally */
-  background-color: #f64d27; /* Background color for the heading */
-  color: #fff; /* Text color */
-  margin-bottom: 40px;
-  padding: 20px; /* Add padding for spacing */
+  font-size: 24px; /* Set the font size for headings */
+  font-weight: bold; /* Make the text bold for headings */
+  text-align: center; /* Center the text horizontally for headings */
+  background-color: #097c35; /* Set a green background color for headings */
+  color: #fff; /* Set the text color to white for headings */
+  margin-bottom: 40px; /* Add a margin at the bottom for spacing */
+  padding: 20px; /* Add padding for spacing within headings */
 }
 
-.para{
-  font-size: 20px; /* the font size  */
-  text-align: center; /* Center the text horizontally */
-  color: #0b0101; /* Text color */
-  margin-bottom: 20px;
-  padding: 20px; /* Add padding for spacing */
+/* Style for the paragraph */
+.para {
+  font-size: 20px; /* Set the font size for paragraphs */
+  text-align: center; /* Center the text horizontally for paragraphs */
+  color: #0b0101; /* Set the text color to a dark shade for paragraphs */
+  margin-bottom: 20px; /* Add a margin at the bottom for spacing */
+  padding: 20px; /* Add padding for spacing within paragraphs */
 }
-
-
-
